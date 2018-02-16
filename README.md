@@ -2,12 +2,11 @@
 
 ## Remote Code Execution
 > This type of an attack allows the hacker to execute unwanted code from a remote location using shell scripting or other measures. This is counter measured by using two things. At first, the htaccess file should be set to allow access to only certain directories, which pose minimum threat if hacked, such as the img/.
+```RewriteCond $1 !^(index\.php|img|robots\.txt)```
 
-```RewriteCond $1 !^(index\.php|img|robots\.txt)
-```
 > Secondly, each .php file in CodeIgniter is protected with the line on the top.
-```<? php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
-```
+```<? php if ( ! defined('BASEPATH')) exit('No direct script access allowed');```
+
 >SQL Injection
 This type of attack is highly common on the web. A SQL injection occurs when an attacker exploits the front-end and the post data to retrieve secure data from the database. According to CodeIgniter manual, it becomes evident that your web application is automatically safe from SQL injection as the POST data is retrieved in the controller using ```$this->input->post``` (‘’); which is automatically filtered by CodeIgniter.
 
