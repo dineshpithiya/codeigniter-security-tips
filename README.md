@@ -36,4 +36,4 @@ Another way is to transfer the errors to log files. So, it will not be displayed
 ```$config['encryption_key'] = "YOUR KEY";```
 
 >Overall security testing
-A Google Chrome extension called Websecurify is a cool piece of software that tests the security of any web application against around 20 top attack types. You can download Websecurify from [here].(https://chrome.google.com/webstore/detail/websecurify/emclbdbpcnhmopfkidjhlinikkohlkpn)
+A Google Chrome extension called Websecurify is a cool piece of software that tests the security of any web application against around 20 top attack types. You can download Websecurify from [here](https://chrome.google.com/webstore/detail/websecurify/emclbdbpcnhmopfkidjhlinikkohlkpn)
