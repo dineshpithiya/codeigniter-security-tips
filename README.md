@@ -1,7 +1,7 @@
 # CodeIgniter Security tips
 
-## Remote Code Execution
-> This type of an attack allows the hacker to execute unwanted code from a remote location using shell scripting or other measures. This is counter measured by using two things. At first, the htaccess file should be set to allow access to only certain directories, which pose minimum threat if hacked, such as the img/.<br />
+>Remote Code Execution
+This type of an attack allows the hacker to execute unwanted code from a remote location using shell scripting or other measures. This is counter measured by using two things. At first, the htaccess file should be set to allow access to only certain directories, which pose minimum threat if hacked, such as the img/.<br />
 ```RewriteCond $1 !^(index\.php|img|robots\.txt)```
 
 > Secondly, each .php file in CodeIgniter is protected with the line on the top.<br />
